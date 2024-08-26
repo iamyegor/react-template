@@ -1,5 +1,5 @@
 import axios, {AxiosError, AxiosRequestConfig, AxiosResponse} from "axios";
-import ServerErrorResponse from "@/types/ServerErrorResponse.ts";
+import ServerErrorResponse from "@/types/errors/ServerErrorResponse.ts";
 
 const api = axios.create({
     baseURL: "https://" + import.meta.env.VITE_BACKEND_ADDRESS + "/api",

@@ -1,4 +1,4 @@
-export class RouteError extends Error {
+export default class RouteError extends Error {
     code: string;
 
     private constructor(code: string, message: string) {
