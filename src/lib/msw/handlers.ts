@@ -1,5 +1,6 @@
 import { http, HttpResponse } from "msw";
-import { serverAddress } from "@/lib/msw/worker.ts";
+
+export const serverAddress = "https://localhost:7071/api";
 
 export const handlers = [
     http.get(`${serverAddress}/data`, async () => {
