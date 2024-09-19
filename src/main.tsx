@@ -4,13 +4,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { routes } from "@/lib/routes.tsx";
 import { worker } from "@/lib/msw/worker.ts";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { ring2 } from "ldrs";
+ring2.register();
 
 const queryClient = new QueryClient();
 
 worker.start().then(() => {
     ReactDOM.createRoot(document.getElementById("root")!).render(
         <QueryClientProvider client={queryClient}>
-            <RouterProvider router={createBrowserRouter(routes)} />,
+            <RouterProvider router={createBrowserRouter(routes)} />
         </QueryClientProvider>,
     );
 });
