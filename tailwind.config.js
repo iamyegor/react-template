@@ -10,8 +10,8 @@ export default {
     			sans: ["Inter", ...defaultTheme.fontFamily.sans]
     		},
     		screens: {
-    			xs: '400px',
-    			sm: '600px',
+    			xs: '420px',
+    			sm: '640px',
     			md: '768px',
     			lg: '1024px',
     			xl: '1280px'
@@ -26,13 +26,12 @@ export default {
     	container: {
     		center: 'true',
     		padding: '20px',
-    		screens: {
-    			sm: '1240px',
-    			md: '1240px',
-    			lg: '1240px',
-    			xl: '1240px',
-    			'2xl': '1700px'
-    		}
+            screens: {
+                sm: "1100px",
+                md: "1100px",
+                lg: "1100px",
+                xl: "1100px",
+            },
     	}
     },
     plugins: [require("tailwindcss-animate")],
